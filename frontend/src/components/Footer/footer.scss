@@ -1,0 +1,29 @@
+@use '../../app';
+
+.footer-container {
+    flex-shrink: 0;
+    flex: 0 0 auto;
+    max-width: 825px;
+    min-width: 200px;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 49px;
+    border-bottom: 1px solid app.$text-color;
+}
+
+.footer-container>* {
+    color: app.$text-color;
+
+    font-family: app.$main-font;
+    font-size: 0.6rem;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.footer-container>*:last-child {
+    margin-right: 0;
+}

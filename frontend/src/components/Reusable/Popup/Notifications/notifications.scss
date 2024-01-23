@@ -1,0 +1,64 @@
+@use '../../../../app';
+
+.notifications-btn {
+    border-style: none;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: 1px solid app.$text-color;
+}
+
+.btn-span {
+    font-family: app.$main-font;
+}
+
+.notification-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.notification-btns {
+    display: flex;
+    gap: 10px
+}
+
+.notification-btn {
+    width: 100px;
+}
+
+.confirm-btn {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: app.$color-3;
+    color: app.$text-color;
+    font-family: app.$main-font;
+    font-size: 20px;
+}
+
+.confirm-btn:hover {
+    background-color: app.$color-2;
+    color: app.$color-1;
+}
+
+.bell-container{
+    display: flex;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.bubble{
+    background-color: app.$color-3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    font-size: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

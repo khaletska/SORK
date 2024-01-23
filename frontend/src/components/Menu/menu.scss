@@ -1,0 +1,85 @@
+@use '../../app';
+
+.menu-container {
+    position: fixed;
+    max-width: var(--left-menu-width);
+    min-width: var(--left-menu-width);
+    height: 100%;
+    background-color: app.$color-1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    border-right: 1px solid app.$text-color;
+    overflow: hidden;
+}
+
+.logo {
+    height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid app.$text-color;
+    box-sizing: border-box;
+}
+
+.menu-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    padding-left: 24px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.menu-top>.menu-item {
+    border-bottom: 1px solid app.$text-color;
+}
+
+.menu-bottom>.menu-item {
+    border-top: 1px solid app.$text-color;
+}
+
+.menu-item:hover {
+    background-color: app.$background-color;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: app.$text-color;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .menu-container {
+        --left-menu-width: 50px;
+        // max-width: $left-menu-width;
+        // min-width: $left-menu-width;
+    }
+
+    .menu-item {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-item>span {
+        display: none;
+    }
+
+    .logo-wrapper {
+        rotate: 0.75turn;
+        scale: 0.4;
+    }
+
+    .logo {
+        height: 125px;
+    }
+}

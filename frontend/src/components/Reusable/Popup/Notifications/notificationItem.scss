@@ -1,0 +1,29 @@
+@use '../../../../app.scss';
+
+.image {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: cover;
+    background-color: app.$color-2;
+}
+
+.border-radius-circle {
+    border-radius: 50%;
+}
+
+.border-radius-square {
+    border-radius: 5px;
+}
+
+.right-item-link{
+    text-transform: uppercase;
+}
+
+.item-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

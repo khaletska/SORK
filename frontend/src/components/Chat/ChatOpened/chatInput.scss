@@ -1,0 +1,56 @@
+@use "../../../app";
+
+.new-message {
+  display: flex;
+  position: relative;
+}
+
+.chat-input {
+  padding: 18px 80px 18px 25px;
+  width: 100%;
+  max-height: 100px;
+  overflow: hidden;
+  color: app.$text-color;
+  resize: none;
+  max-height: 7em;
+  overflow-y: auto;
+  font-family: app.$main-font;
+
+  word-break: break-word;
+  -ms-word-break: break-word;
+  outline: none;
+}
+
+.chat-input::-webkit-scrollbar {
+  width: 0;
+}
+
+.chat-input[contenteditable]:empty::before {
+  content: "Write a message here";
+  color: app.$color-2;
+}
+
+.new-message-icon {
+  position: absolute;
+  padding-top: 13px;
+  width: 24px;
+  height: 24px;
+}
+
+.chat-send {
+  left: auto;
+  right: 15px;
+}
+
+.chat-add-emoji {
+  left: auto;
+  right: 44px;
+}
+
+.new-message-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@media only screen and (max-width: 1080px) {}

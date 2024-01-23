@@ -1,0 +1,52 @@
+@use '../../../app';
+
+.post-item {
+    width: 48%;
+    border-radius: 5px;
+    background-color: app.$color-1;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+}
+
+.post-item-wide {
+    width: 100%;
+    border-radius: 5px;
+    background-color: app.$color-1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-item-wide:hover,
+.post-item:hover {
+    box-shadow: inset 0 0 0 1px app.$color-3;
+}
+
+.post-item-image {
+    max-width: 100%;
+    height: 225px;
+    object-fit: cover;
+    background-color: app.$color-2;
+}
+
+.post-item-text {
+    margin: 20px 20px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-item-read-more {
+    margin: 10px 15px 15px 0;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 620px) {
+    .post-item {
+        width: 100%;
+    }
+}

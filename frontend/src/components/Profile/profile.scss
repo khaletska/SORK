@@ -1,0 +1,115 @@
+@use '../../app';
+
+.profile-wrapper {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 75px;
+    background-color: app.$color-2;
+}
+
+.user-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-basic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.user-details-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.user-name {
+    text-align: center;
+}
+
+.user-nickname {
+    color: app.$color-2;
+    text-align: center;
+}
+
+.nickname {
+    color: app.$text-color;
+}
+
+.user-email-dob {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.user-edit-profile-btn {
+    width: 100%;
+}
+
+.friends-btn-menu {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.friends-btn {
+    border: none;
+    font-family: app.$main-font;
+}
+
+.user-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 3px;
+}
+
+.user-groups-wrapper {
+    margin-bottom: 13px;
+}
+
+.profile-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+@media only screen and (max-width: 769px) {
+    .post-item {
+        width: 100%;
+    }
+
+    .user-details {
+        align-items: center;
+    }
+
+    .user-basic {
+        justify-content: center;
+    }
+}

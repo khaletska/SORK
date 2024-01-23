@@ -1,0 +1,19 @@
+@use "../../../app";
+
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.chat-history::-webkit-scrollbar {
+  width: 0;
+}
+
+.red-error-msg {
+  align-self: end;
+  color: red;
+}

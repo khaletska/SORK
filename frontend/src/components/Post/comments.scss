@@ -1,0 +1,143 @@
+@use "../../app";
+
+.no-comments {
+  margin: 13px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 13px 0 15px;
+}
+
+.comments-header {
+  margin-bottom: 16px;
+}
+
+.comment-box {
+  padding: 0 25px;
+  background-color: app.$color-1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.comment-img {
+  max-height: 350px;
+  max-width: 350px;
+  object-fit: contain;
+}
+
+.comment-itself {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-content {
+  text-align: justify;
+  word-break: break-word;
+  -ms-word-break: break-word;
+}
+
+.new-comment {
+  display: flex;
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.comment-input {
+  padding: 18px 80px 18px 50px;
+  width: 100%;
+  max-height: 100px;
+  overflow: hidden;
+  color: app.$text-color;
+  resize: none;
+  max-height: 7em;
+  overflow-y: auto;
+  font-family: app.$main-font;
+
+  word-break: break-word;
+  -ms-word-break: break-word;
+}
+
+.comment-input::-webkit-scrollbar {
+  width: 0;
+}
+
+.comment-input[contenteditable]:empty::before {
+  content: "Add your comment";
+  color: app.$color-2;
+}
+
+.new-comment-icon {
+  position: absolute;
+  padding-top: 13px;
+  width: 24px;
+  height: 24px;
+}
+
+.comment-add-img {
+  left: 15px;
+}
+
+.comment-send {
+  left: auto;
+  right: 15px;
+}
+
+.comment-add-emoji {
+  left: auto;
+  right: 44px;
+}
+
+.uploaded-comment-image {
+  object-fit: cover;
+  max-height: 100px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+}
+
+pre {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  font-family: "Barlow", sans-serif;
+
+  font-size: 0.75rem;
+  --left-menu-width: 300px;
+  -webkit-font-smoothing: antialiased;
+}
+
+// .image-size-error-popup {
+//   display: flex;
+//   flex-direction: column;
+//   color: red;
+// }
+
+@media only screen and (max-width: 1080px) {
+  .comment-box {
+    flex-direction: column-reverse;
+    gap: 25px;
+    padding: 25px 0;
+  }
+
+  .comment-img {
+    max-width: none;
+    max-height: none;
+  }
+
+  .comment-itself {
+    margin: 0 25px;
+  }
+}

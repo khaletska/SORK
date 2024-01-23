@@ -1,0 +1,54 @@
+@use '../../app';
+
+#ErrorPage {
+    display: flex;
+    height: calc(100vh - 88px);
+    justify-content: center;
+    align-items: center;
+}
+
+#ErrorBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+#oopsBox {
+    width: 360px;
+    height: 67px;
+    position: relative;
+}
+
+#errorCode {
+    display: flex;
+
+    color: app.$color-2;
+    font-family: app.$main-font;
+    font-size: 250px;
+    font-weight: 400;
+}
+
+.back-home-btn {
+    cursor: pointer;
+    align-self: center;
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    background: app.$color-3;
+    color: app.$text-color;
+    border: none;
+    font-family: app.$main-font;
+}
+
+@media only screen and (max-width: 500px) {
+    #oopsBox,
+    .back-home-btn {
+        width: 150px;
+    }
+
+    #errorCode {
+        font-size: 100px;
+    }
+}

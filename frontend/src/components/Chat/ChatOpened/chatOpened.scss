@@ -1,0 +1,62 @@
+@use "../../../app";
+
+.chat-content {
+  height: calc(100% - 50px - 15px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid app.$text-color;
+}
+
+.open-chat-header-wrapper {
+  flex-shrink: 0;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 50px;
+}
+
+.open-chat-header {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.sender-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-avatar {
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: cover;
+  background-color: app.$color-2;
+}
+
+@media only screen and (max-width: 769px) {
+  .chat-avatar {
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .open-chat-header-wrapper {
+    height: 40px;
+  }
+
+  .chat-content {
+    height: calc(100% - 40px - 15px);
+  }
+}

@@ -1,0 +1,28 @@
+@use '../../../app';
+
+.message-container {
+    width: 75%;
+    max-width: 366px;
+    background-color: app.$color-1;
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-sent {
+    align-self: flex-end;
+    color: app.$color-2;
+}
+
+.msg-right {
+    align-self: flex-end;
+}
+
+.msg-left {
+    align-self: flex-start;
+}
+
+pre {
+    margin: 0px;
+}

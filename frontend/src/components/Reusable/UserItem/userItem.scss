@@ -1,0 +1,17 @@
+@use '../../../app';
+
+.post-author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-author-avatar {
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: app.$color-2;
+}

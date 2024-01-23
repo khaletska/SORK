@@ -1,0 +1,28 @@
+@use '../../app';
+
+#emojis-container {
+    // width: 100px;
+    padding: 10px;
+    height: 30px;
+    background-color: app.$color-1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+    gap: 10px;
+
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#emojis-container::-webkit-scrollbar {
+    display: none;
+}
+
+.emoji-btn {
+    background-color: transparent;
+    border-style: none;
+}

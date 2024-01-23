@@ -1,0 +1,55 @@
+@use '../../app';
+
+.post-wrapper {
+    margin: 40px auto 0;
+    border-bottom: 1px solid app.$text-color;
+    overflow-wrap: break-word;
+}
+
+.post-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background-color: app.$color-2;
+}
+
+.post-title {
+    padding-top: 30px;
+    color: app.$text-color;
+    border-top: 1px solid app.$text-color;
+}
+
+.post-content {
+    text-align: justify;
+}
+
+.post-details {
+    margin: 22px auto 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-details-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-details-lower {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-end;
+}
+
+.like-btn {
+    border: none;
+    background-color: transparent;
+}

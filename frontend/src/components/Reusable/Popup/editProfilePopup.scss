@@ -1,0 +1,33 @@
+@use '../../../app';
+
+.pop-up-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-nickname {
+    height: 14px;
+}
+
+.input-about {
+    height: 224px;
+}
+
+.input-about,
+.input-nickname {
+    font-family: app.$main-font;
+
+    padding: 18px 25px;
+    resize: none;
+}
+
+.edit-apply-btn {
+    height: 50px;
+}

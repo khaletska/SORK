@@ -1,0 +1,238 @@
+@use '../../app';
+
+.group-page-container {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.group-member {
+    display: flex;
+    border-top: 1px solid #000;
+    height: 50px;
+    align-items: center;
+}
+
+.group-followers-container {
+    background-color: app.$color-1;
+    border-radius: 5px;
+    padding: 13px;
+    text-align: center;
+}
+
+.followers-title {
+    padding-bottom: 13px;
+}
+
+.group-flex-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    min-width: 150px;
+    width: 100%;
+    // flex-wrap: wrap-reverse;
+}
+
+.group-middle-container {
+    width: 100%;
+}
+
+.group-right-container {
+    min-width: 25%;
+    max-width: 25%;
+}
+
+.group-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.group-header-image {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.group-events-container {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.events-slider {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.events-header,
+.posts-header {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.group-event-image {
+    margin-bottom: 21px;
+    margin-top: auto;
+    width: 100%;
+    height: 225px;
+    background-color: app.$color-2;
+    object-fit: cover;
+}
+
+.event-card {
+    background-color: app.$color-1;
+    border-radius: 5px;
+    width: 250px;
+    min-height: 350px;
+}
+
+.event-name {
+    margin: 20px 12px 0 13px;
+}
+
+.event-description {
+    margin: 0 12px 0 13px;
+}
+
+.post-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    // margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.group-description-container {
+    border-radius: 5px;
+    padding: 18px 12px 17px 12px;
+    background-color: app.$color-1;
+}
+
+.column-flex-gap-10 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-popup-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: app.$color-2;
+}
+
+.tabs {
+    display: flex;
+    gap: 23px;
+    list-style-type: none;
+    margin: 0 25px 0px 25px;
+    width: 50%;
+}
+
+.tab-item {
+    flex-grow: 1;
+    height: 50px;
+}
+
+.tab-button {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font: inherit;
+}
+
+.tab-button:hover {
+    border-bottom: 1px solid #000;
+}
+
+.inactive-tab-button {
+    color: app.$color-2;
+    border-bottom: transparent;
+}
+
+.event-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.event-popup-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.event-popup-button,
+.width-100 {
+    width: 100%;
+}
+
+.selected-option {
+    background-color: app.$color-3 !important;
+    color: app.$text-color !important;
+}
+
+.event-tab-content {
+    margin: 20px 25px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-popup {
+    min-height: 600px;
+    height: fit-content;
+    max-height: 800px;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0px;
+}
+
+.btn-follow {
+    width: 175px;
+}
+
+#add-event-btn, #add-post-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#add-event-btn .arrow.rotate, #add-post-btn .arrow.rotate {
+    transform: rotate(-45deg);
+}
+
+.rotate {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+}
+
+@media only screen and (max-width: 800px) {
+    .group-flex-items-container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .group-middle-container {
+        width: 100%;
+    }
+
+    .group-right-container {
+        width: 100%;
+    }
+
+    .group-description-container {
+        text-align: center;
+    }
+}

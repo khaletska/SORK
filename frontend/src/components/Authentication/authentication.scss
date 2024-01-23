@@ -1,0 +1,141 @@
+@use '../../app';
+
+.content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form-container {
+    width: 80%;
+    max-width: 500px;
+    background-color: app.$color-1;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    gap: 25px;
+}
+
+.login-form-container {
+    width: 80%;
+    max-width: 500px;
+    background-color: app.$color-1;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25px;
+    gap: 25px;
+}
+
+.auth-form-logo {
+    width: 80%;
+    max-width: 253px;
+    max-height: 50px;
+    display: flex;
+}
+
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-form-field>input {
+    border: 1px solid app.$color-2;
+
+    padding: 13px 12px;
+}
+
+.auth-form-field>textarea {
+    max-width: 500px;
+    border: 1px solid app.$color-2;
+    resize: none;
+    height: 150px;
+    padding: 13px 12px;
+    color: app.$text-color;
+    font-family: app.$main-font;
+    white-space: break-spaces;
+    overflow-y: scroll;
+    word-break: break-word;
+    -ms-word-break: break-word;
+}
+
+.auth-form-field>input[type="date"] {
+    color: app.$color-2;
+    font-family: app.$main-font;
+}
+
+.auth-form-field>input::placeholder {
+    color: app.$color-2;
+    font-family: app.$main-font;
+}
+
+.auth-form-field>textarea::placeholder {
+    color: app.$color-2;
+    font-family: app.$main-font;
+    white-space: break-spaces;
+    overflow-y: scroll;
+    word-break: break-word;
+    -ms-word-break: break-word;
+}
+
+.auth-form-field>input[type="date"]::placeholder {
+    color: app.$color-2;
+    font-family: app.$main-font;
+}
+
+.auth-form-lowest {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.auth-form-lowest>button {
+    width: 100%;
+    height: 50px;
+}
+
+.continue-btn {
+    height: 50px;
+}
+
+#image-box {
+    background-color: app.$color-1;
+}
+
+@media only screen and (max-width: 576px),
+(max-height: 769px) {
+
+    .signup-form-container,
+    .login-form-container {
+        width: calc(100% - 50px);
+        min-height: calc(100% - 60px);
+        box-shadow: none;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-height: 769px) {
+    .content-container {
+        align-items: flex-start;
+    }
+}

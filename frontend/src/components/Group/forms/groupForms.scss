@@ -1,0 +1,42 @@
+@use '../../../app';
+
+.hidden-bottom-border {
+    border-bottom: none !important;
+}
+
+.group-form-content {
+    border-bottom: solid 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.group-form-field>input {
+    padding: 18px 25px;
+    color: app.$text-color;
+    font-family: app.$main-font;
+}
+
+.group-form-field>textarea {
+    min-height: 64px;
+    padding: 18px 25px;
+    overflow: auto;
+    resize: none;
+    color: app.$text-color;
+    font-family: app.$main-font;
+}
+
+.group-form-field>input::placeholder, .group-form-field>textarea::placeholder {
+    color: app.$color-2;
+}
+
+.group-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#group-post-content {
+    min-height: 272px;
+}
